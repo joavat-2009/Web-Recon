@@ -4,7 +4,6 @@
 
 A lightweight, fault-tolerant Python script designed for fast website connectivity checks and automated domain security intelligence gathering.
 
-
 ## Features
 - **Smart Link Validation**: Checks HTTP status codes using professional User-Agent headers to prevent fake 403 Forbidden blocks.
 - **Robust Error Handling**: Safely catches connection timeouts, dead domains, input typos, and missing pages without breaking execution.
