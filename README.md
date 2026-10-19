@@ -1,8 +1,9 @@
 # Web Recon & Domain Intelligence Tool (v0.1)
 
-<a href="https://python.org"><img src="https://githubusercontent.com" width="40" height="40" alt="Python" /></a> &nbsp; <a href="https://linux.org"><img src="https://githubusercontent.com" width="40" height="40" alt="Linux" /></a>
+<img src="https://cdg.sh" width="20" height="20" /> **Python 3** &nbsp;&nbsp;|&nbsp;&nbsp; <img src="https://githubassets.com" width="20" height="20" /> **GitHub / OSINT**
 
 A lightweight, fault-tolerant Python script designed for fast website connectivity checks and automated domain security intelligence gathering.
+
 
 ## Features
 - **Smart Link Validation**: Checks HTTP status codes using professional User-Agent headers to prevent fake 403 Forbidden blocks.
