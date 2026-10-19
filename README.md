@@ -1,6 +1,6 @@
 # Web Recon & Domain Intelligence Tool (v0.1)
 
-![Python](https://shields.io) ![Linux](https://shields.io) ![License: GPL v3](https://shields.io) ![JSON Report](https://shields.io)
+<img src="https://shields.io" /> <img src="https://shields.io" /> <img src="https://shields.io" /> <img src="https://shields.io" />
 
 A lightweight, fault-tolerant Python script designed for fast website connectivity checks and automated domain security intelligence gathering.
 
