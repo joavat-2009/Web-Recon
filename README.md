@@ -38,4 +38,10 @@ python recon.py
 2. If the link is working correctly, the script proceeds as normal.
 3. If an error is detected, it generates a comprehensive `report.json` with the exact HTTP status and WHOIS passport data in your directory.
 
+## Author
 
+- Joseph Avatyants
+
+- GitHub: joavat-2009
+
+- Email: joavat2009@gmail.com
