@@ -1,6 +1,7 @@
 # Web Recon & Domain Intelligence Tool (v0.1)
 
-<img src="https://cdg.sh" width="20" height="20" /> **Python 3** &nbsp;&nbsp;|&nbsp;&nbsp; <img src="https://githubassets.com" width="20" height="20" /> **GitHub / OSINT**
+![GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)
+
 
 A lightweight, fault-tolerant Python script designed for fast website connectivity checks and automated domain security intelligence gathering.
 
