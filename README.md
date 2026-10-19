@@ -1,8 +1,6 @@
 # Web Recon & Domain Intelligence Tool (v0.1)
 
-![Python](https://badgen.net) ![Linux](https://badgen.net) ![License](https://badgen.net) ![Output](https://badgen.net)
-
-A lightweight, fault-tolerant Python script designed for fast website connectivity checks and automated domain security intelligence gathering.
+![Python](https://shields.io) ![Linux](https://shields.io) ![License](https://shields.io) ![JSON](https://shields.io)
 
 ## Features
 - **Smart Link Validation**: Checks HTTP status codes using professional User-Agent headers to prevent fake 403 Forbidden blocks.
