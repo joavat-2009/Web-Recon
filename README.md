@@ -25,8 +25,8 @@ To run this tool locally on your machine, clone this repository and install the 
 
 ```bash
 # Clone the repository
-git clone <your-repository-url>
-cd <repository-folder-name>
+git https://joavat-2009/Web-Recon.git
+cd Web-Recon
 
 # Install required external libraries
 pip install requests python-whois
