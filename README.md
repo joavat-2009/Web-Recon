@@ -1,8 +1,7 @@
-# Web Recon & Domain Intelligence Tool
+# Web Recon & Domain Intelligence Tool (v0.1)
 
-<a href="https://www.python.org/">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python" alt="Python">
-</a>![Linux](https://shields.io) ![License](https://shields.io) ![Output](https://shields.io) [![GPLv3](https://img.shields.io/badge/GPLv3-FFFFFF)](#)
+[![Python](https://shields.io)](https://python.org) [![Linux](https://shields.io)](https://linux.org) [![SQLite](https://shields.io)](https://sqlite.org) [![GPLv3](https://shields.io)](https://gnu.org) [![JSON](https://shields.io)](https://json.org)
+
 
 
 A lightweight, fault-tolerant Python script designed for fast website connectivity checks and automated domain security intelligence gathering.
