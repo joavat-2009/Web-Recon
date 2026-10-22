@@ -1,4 +1,4 @@
-# Web Recon & Domain Intelligence Tool (v0.1)
+# Web Recon & Domain Intelligence Tool
 
 <a href="https://www.python.org/">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python" alt="Python">
