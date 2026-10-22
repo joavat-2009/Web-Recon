@@ -1,5 +1,4 @@
-<img height="40" src="https://img.shields.io/badge/GPLv3-FFFFFF?style=flat" />
-<img height="40" src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=flat" />
+[![GPLv3](https://img.shields.io/badge/GPLv3-FFFFFF?style=for-the-badge)](#) [![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=for-the-badge)](#) [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=for-the-badge)](#) [![SQLite](https://img.shields.io/badge/SQLite-%2307405e.svg?logo=sqlite&logoColor=white&style=for-the-badge)](#)
 
 A lightweight, fault-tolerant Python script designed for fast website connectivity checks and automated domain security intelligence gathering.
 
