@@ -24,7 +24,7 @@ To run this tool locally on your machine, clone this repository and install the 
 
 ```bash
 # Clone the repository
-git clone https://github.com
+git clone https://github.com/joavat-2009/Web-Recon.git
 cd Web-Recon
 
 # Install required external libraries
