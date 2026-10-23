@@ -45,7 +45,7 @@ python recon.py
 ### [v0.2.1]
 - Implemented multi-threaded scanning architecture.
 - Added automated file stream parsing for `.txt` target lists.
-- Added **SQLite3 database** integration (`reconReport.db`).
+- Added **SQLite3 database** integration (`reconReport.db`)
 - Implemented structured tables initialization upon startup.
 - Fixed race conditions and file write blocks during multi-threaded DB commits.
 
