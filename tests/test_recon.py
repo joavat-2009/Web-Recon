@@ -4,7 +4,7 @@ import pytest
 import aiosqlite
 import argparse
 
-from recon060 import init_db, insert_error, check_single_link_async
+from recon import init_db, insert_error, check_single_link_async
 
 pytestmark = pytest.mark.asyncio
 
