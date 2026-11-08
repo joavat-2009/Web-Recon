@@ -3,6 +3,7 @@ import sys
 import pytest
 import aiosqlite
 import argparse
+from src.web_recon.recon import init_db, insert_error, check_single_link_async
 
 from recon import init_db, insert_error, check_single_link_async
 
