@@ -9,28 +9,21 @@ from recon import init_db, insert_error, check_single_link_async
 pytestmark = pytest.mark.asyncio
 
 
-async def test_init_db(tmp_path):
-  
+async def test_init_db(tmp_path, monkeypatch): # <- Добавь фикстуру monkeypatch
     test_db_name = "test_report_init"
     test_db_path = tmp_path / f"{test_db_name}.db"
     
-   
-    db_full_path = str(tmp_path / test_db_name)
-    
-   
-    await init_db(db_full_path)
-    
+    monkeypatch.chdir(tmp_path)
+  
+    await init_db(test_db_name)
     
     assert os.path.exists(test_db_path) is True
     
-   
     async with aiosqlite.connect(test_db_path) as conn:
         async with conn.execute(f"PRAGMA table_info([{test_db_name}])") as cursor:
             columns = await cursor.fetchall()
+            column_names = [col[1] for col in columns] 
             
-            column_names = [col[1] for column in columns]
-            
-           
             assert "date" in column_names
             assert "url" in column_names
             assert "status" in column_names
@@ -38,16 +31,16 @@ async def test_init_db(tmp_path):
             assert "latency" in column_names
 
 
-async def test_insert_error_and_commit(tmp_path):
-  
-    test_db_name = "stealth-audit-2026"
+
+async def test_insert_error_and_commit(tmp_path, monkeypatch): 
+    test_db_name = "stealth_audit_2026"
     test_db_path = tmp_path / f"{test_db_name}.db"
-    db_full_path = str(tmp_path / test_db_name)
     
-  
-    await init_db(db_full_path)
+    monkeypatch.chdir(tmp_path)
+    
+    await init_db(test_db_name)
     await insert_error(
-        db_full_path, 
+        test_db_name,
         "08.11.2026", 
         "https://broken-target.com", 
         "Error code 404: Not Found", 
@@ -64,6 +57,7 @@ async def test_insert_error_and_commit(tmp_path):
             assert row[2] == "Error code 404: Not Found"
             assert row[3] == "Test WHOIS Passport Data"
             assert row[4] == "420.69"
+
 
 def test_cli_arguments_parsing():
     parser = argparse.ArgumentParser()
