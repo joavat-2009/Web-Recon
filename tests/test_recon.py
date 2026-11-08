@@ -3,11 +3,9 @@ import sys
 import pytest
 import aiosqlite
 import argparse
-from src.web_recon.recon import init_db, insert_error, check_single_link_async
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
-
-from recon import init_db, insert_error, check_single_link_async
-
+from web_recon.recon import init_db, insert_error, check_single_link_async
 pytestmark = pytest.mark.asyncio
 
 
