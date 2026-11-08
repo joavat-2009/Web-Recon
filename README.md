@@ -36,19 +36,19 @@ Unlike traditional, rigid brute-forcers or simple domain checkers, `Web-Recon` b
 
 ```bash
 # Display the built-in technical manual and options layout
-python recon0.6.0.py --help
+python recon.py --help
 
 # Run a standard mass async perimeter scan with the interactive TUI dashboard active
-python recon0.6.0.py -f ./sites/targets.txt -o CorporateAudit
+python recon.py -f ./sites/targets.txt -o CorporateAudit
 
 # Stealth Mode: Cap concurrency to 2 tasks and inject a strict 1.5s delay to evade WAF blocks
-python recon0.6.0.py -f ./sites/targets.txt -o StealthReport -c 2 -d 1.5
+python recon.py -f ./sites/targets.txt -o StealthReport -c 2 -d 1.5
 
 # Audit a single isolated target infrastructure
-python recon0.6.0.py -t https://linode.com -o OnDemandCheck
+python recon.py -t https://linode.com -o OnDemandCheck
 
 # Headless execution mode for background bash scripting pipelines
-python recon0.6.0.py -f ./sites/targets.txt -o AutomatedLog --quiet
+python recon.py -f ./sites/targets.txt -o AutomatedLog --quiet
 ```
 
 ---
