@@ -31,7 +31,7 @@ Homepage = "https://github.com/joavat-2009"
 Issues = "https://github.com/joavat-2009/Web-Recon/issues"
 
 [project.scripts]
-web-recon = "recon:arguments"
+web-recon = "web_recon.recon:arguments"
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
