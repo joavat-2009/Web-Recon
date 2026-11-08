@@ -26,6 +26,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install rich aiohttp aiosqlite requests python-whois pytest pytest-asyncio
+        pip install -e .
 
     - name: Run test execution framework
       run: |
