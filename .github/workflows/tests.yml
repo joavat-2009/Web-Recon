@@ -1,0 +1,33 @@
+name: Web-Recon Automated Testing Suite
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test-automation:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12", "3.13"]
+
+    steps:
+    - name: Checkout repository source code
+      uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install production and testing dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install rich aiohttp aiosqlite requests python-whois pytest pytest-asyncio
+
+    - name: Run test execution framework
+      run: |
+        pytest -v
+
