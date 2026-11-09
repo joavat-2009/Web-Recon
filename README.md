@@ -14,7 +14,7 @@ Unlike traditional, rigid brute-forcers or simple domain checkers, `Web-Recon` b
 
 ---
 
-## 🧠 Core Architectural Features
+##  Core Architectural Features
 
 * **Reactive Async Core (`asyncio` + `aiohttp`):** Orchestrates massive non-blocking request bursts through a single persistent `ClientSession` pipeline, bypassing heavy OS-level thread overhead. It leverages native response reason parsing to capture precise server-side execution context without bloated conditional statements.
 * **Dynamic Identity Evasion Matrix (New in v0.6.2):** Implements a multi-tiered sequential identity cascading loader to completely scramble scanner profiling against Web Application Firewalls (WAF) and active anti-bot systems. Every parallel request spawned within the loop picks an isolated, random browser string signature, mimicking distributed live organic user traffic.
@@ -26,7 +26,7 @@ Unlike traditional, rigid brute-forcers or simple domain checkers, `Web-Recon` b
 
 ---
 
-## 🛡️ Identity Cascading Logic (User-Agent Fallback Architecture)
+##  Identity Cascading Logic (User-Agent Fallback Architecture)
 
 When evaluating target perimeter nodes, `Web-Recon` enforces a 3-tier fallback matrix to ensure browser headers are always authentic, stealthy, and un-profiled:
 1. **Tier 1 (Programmatic File):** If the custom flag `-A` is assigned, the engine strictly loads, isolates, and parses the localized text file provided by the operator.
@@ -35,7 +35,7 @@ When evaluating target perimeter nodes, `Web-Recon` enforces a 3-tier fallback m
 
 ---
 
-## 🛠️ CLI Flags & Usage Manual
+##  CLI Flags & Usage Manual
 
 ### Options Matrix
 
@@ -70,7 +70,7 @@ web-recon -f ./sites/targets.txt -o AutomatedLog --quiet
 
 ---
 
-## 🛡️ Security & SAST Audit Results
+##  Security & SAST Audit Results
 
 The application's source code has been audited via the **Bandit SAST Scanner** (Static Application Security Testing) against strict production security metrics.
 
