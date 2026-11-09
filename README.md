@@ -6,6 +6,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=for-the-badge)](#) [![SQLite](https://img.shields.io/badge/SQLite-%2307405e.svg?logo=sqlite&logoColor=white&style=for-the-badge)](#) [![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=for-the-badge)](#) [![GPLv3](https://img.shields.io/badge/GPLv3-FFFFFF?style=for-the-badge)](#)
 
+---
+
 **Web-Recon** is a high-performance, production-grade asynchronous CLI/TUI utility engineered for passive reconnaissance (OSINT), mass network perimeter auditing, and deep infrastructure health tracking.
 
 Unlike traditional, rigid brute-forcers or simple domain checkers, `Web-Recon` bridges the gap between reactive asynchronous scanning speeds and multi-dimensional OSINT data enrichment. Upon detecting any network anomaly (such as connection drops, DNS failures, timeouts, or non-200 HTTP response codes), the utility instantly spawns non-blocking background workers. These workers retrieve full WHOIS registration profiles, including registrar metadata, creation/expiration timelines, and active name servers, immediately packaging structured outputs into an atomic SQLite relational database.
