@@ -67,14 +67,6 @@ The application's source code has been audited via the **Bandit SAST Scanner** (
 
 ---
 
-## Release Notes (v0.6.0-RC)
-
-This release elevates the repository to the formal standards required by the upstream **Kali Linux Packages** submission workflow. 
-1. **Removed Manual I/O Blockers:** Deprecated all blocking, runtime keyboard-prompt hooks (`console.input()`), migrating lifecycle orchestration completely to programmatic arguments.
-2. **Defensive Tabular Escaping:** Patched runtime schema compilation queries inside `init_db` and `insert_error` with `[]` encapsulation, preventing database execution crashes on user outputs containing hyphens or spaces.
-3. **Muted Subsystem Logging:** Intercepted third-party stream telemetry from the underlying socket layer, forcing verbose connection errors on dead domains to drop silently in the background while keeping the main progress tracking UI pristine.
-
-
 ##  Author
 - **Joseph Avatyants**
 - GitHub: [@joavat-2009](https://github.com)
