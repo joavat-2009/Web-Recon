@@ -160,7 +160,12 @@ def check_your_domain_info(url):
 
         formatted_whois = []
         for key, value in whois_info.items():
-            formatted_whois.append(f"{key.replace('_', '').capitalize()}: {value}")
+            if isinstance(value, list):
+                clean_value = ", ".join(str(item) for item in value)
+            else:
+                clean_value = value
+
+            formatted_whois.append(f"{key.replace('_', '').capitalize()}: {clean_value}")
 
         final_whois = "\n\n".join(formatted_whois)
         return final_whois
@@ -194,8 +199,7 @@ def arguments():
     if args.file:
         if os.path.exists(args.file):
             if not args.quiet:
-                console.print(
-                    f"[bold green]► Detected a file! Launching async scanner for: {args.file}...[/bold green]")
+                console.print(f"[bold green]► Detected a file! Launching async scanner for: {args.file}...[/bold green]")
 
             asyncio.run(process_file_async(args.file, f_db_name, args.concurrency, args.delay))
 
@@ -205,8 +209,7 @@ def arguments():
 
     elif args.target:
         if not args.quiet:
-            with console.status(f"[bold green]Launching single target async check for {args.target}...[/bold green]",
-                                spinner="line"):
+            with console.status(f"[bold green]Launching single target async check for {args.target}...[/bold green]",spinner="line"):
                 asyncio.run(process_single_async(args.target, f_db_name))
         else:
             asyncio.run(process_single_async(args.target, f_db_name))
