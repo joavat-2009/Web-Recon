@@ -1,6 +1,6 @@
 # Web Recon & Domain Intelligence Tool
 
-<p align="left">
+<p align="left">                                                          [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=for-the-badge)](#)
   <img src="assets/logo.png" width="250" alt="Web-Recon Logo">
 </p>
 
