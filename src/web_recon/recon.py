@@ -31,7 +31,7 @@ console = Console()
 logging.getLogger("whois.whois").setLevel(logging.CRITICAL)
 
 
-CURRENT_VERSION = "0.5.0"
+CURRENT_VERSION = "0.6.1"
 
 current_date = datetime.today()
 
