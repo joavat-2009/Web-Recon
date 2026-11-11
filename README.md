@@ -1,4 +1,9 @@
-# Web Recon & Domain Intelligence Tool
+# Web Recon & Domain Intelligence Tool 
+<p align="right">
+  <a href="README.md"><b>🇬🇧 English</b></a> | 
+  <a href="README.ru.md"><b>🇷🇺 Русский</b></a>
+</p>
+
 
 <p align="center">
   <img src="assets/logo.png" width="400" alt="Web-Recon Logo">
