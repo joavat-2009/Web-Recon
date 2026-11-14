@@ -19,6 +19,22 @@ Unlike traditional, rigid brute-forcers or simple domain checkers, `Web-Recon` b
 
 ---
 
+## Visual Preview
+
+<p align="center">
+  <img src="assets/tui_demo.png" alt="Web-Recon TUI Interface (one link)" width="85%">
+</p>
+
+<p align="center">
+  <img src="assets/tui_demo1.png" alt="Web-Recon TUI Interface (list of links)" width="85%">
+</p>
+
+<p align="center">
+  <img src="assets/sqlite_report.png" alt="Web-Recon SQLite WHOIS Output" width="85%">
+</p>
+
+---
+
 ##  Core Architectural Features
 
 * **Reactive Async Core (`asyncio` + `aiohttp`):** Orchestrates massive non-blocking request bursts through a single persistent `ClientSession` pipeline, bypassing heavy OS-level thread overhead. It leverages native response reason parsing to capture precise server-side execution context without bloated conditional statements.
