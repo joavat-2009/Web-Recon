@@ -35,6 +35,9 @@ The utility also features **real-time network latency profiling** — every requ
   <img src="assets/sqlite_report.png" alt="Web-Recon SQLite WHOIS Output" width="85%">
 </p>
 
+<p align="center">
+  <img src="assets/csv_output.png" alt="Web-Recon CSV WHOIS Output" width="85%">
+</p>
 ---
 
 ##  Core Architectural Features
