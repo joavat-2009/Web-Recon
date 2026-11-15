@@ -35,6 +35,10 @@
   <img src="assets/sqlite_report.png" alt="WHOIS-вывод SQLite в Web-Recon" width="85%">
 </p>
 
+<p align="center">
+  <img src="assets/csv_output.png" alt="WHOIS-вывод CSV в Web-Recon" width="85%">
+</p>
+
 ---
 
 ##  Ключевые архитектурные особенности
