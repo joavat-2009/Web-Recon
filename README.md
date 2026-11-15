@@ -77,6 +77,25 @@ Every scanned target flows through a deterministic, non-blocking pipeline:
 
 ---
 
+## Installation
+
+### Requirements
+
+- Python 3.11+
+- Linux / macOS (Windows should work via WSL, but is not officially tested)
+
+### Install from source (recommended for now)
+
+The project is not yet on PyPI, so install it from the repository:
+
+```bash
+git clone https://github.com/joavat-2009/Web-Recon.git
+cd Web-Recon
+pipx install .
+```
+
+---
+
 ##  CLI Flags & Usage Manual
 
 ### Options Matrix
