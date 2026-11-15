@@ -290,7 +290,9 @@ def arguments():
     else:
         pass
 
-
+def main():
+    """Entry point wrapper for pip-installed CLI."""
+    arguments()
 
 if __name__ == "__main__":
-    arguments()
+    main()
