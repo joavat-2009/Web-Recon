@@ -133,6 +133,6 @@ web-recon -f ./sites/targets.txt -o CorporateAudit -cT
 ---
 
 ##  Автор
-- **Иосиф Аватянц (Joseph Avatyants)**
+- **Иосиф Аватьянц (Joseph Avatyants)**
 - GitHub: [@joavat-2009](https://github.com)
 - Email: joavat2009@gmail.com
